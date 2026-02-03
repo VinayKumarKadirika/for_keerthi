@@ -1,0 +1,22 @@
+.nav-btn {
+  margin-top: 40px;
+  padding: 15px 30px;
+  background: #ff4d88;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 1.2em;
+  transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+  transform: scale(1.05);
+}
+
+.code {
+  background: #ffe3ec;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 30px auto;
+  width: fit-content;
+}

@@ -5,7 +5,7 @@
   <title>For Keerthi ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
+<audio id="bgMusic" src="song.mp3" loop></audio>
 <body>
 
 <section class="section">
@@ -24,28 +24,7 @@
   </div>
 </section>
 
-  <audio id="bgMusic" loop>
-  <source src="song.mp3" type="audio/mpeg">
-</audio>
 
-<script>
-const music = document.getElementById("bgMusic");
-
-  function startMusic() {
-    music.volume = 0.5;
-    music.play().then(() => {
-      console.log("Music started");
-    }).catch(err => {
-      console.log("Music error:", err);
-    });
-
-    document.removeEventListener("click", startMusic);
-    document.removeEventListener("touchstart", startMusic);
-  }
-
-  document.addEventListener("click", startMusic);
-  document.addEventListener("touchstart", startMusic);
-</script>
 
 
 <script src="hearts.js"></script>

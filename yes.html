@@ -5,6 +5,22 @@
   <title>She Said YES ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<audio id="bgMusic" src="song.mp3" loop></audio>
+
+<button id="startMusicBtn" class="music-btn">
+  ▶️ Tap to play our song ❤️
+</button>
+
+<script>
+  const music = document.getElementById("bgMusic");
+  const btn   = document.getElementById("startMusicBtn");
+
+  btn.addEventListener("click", () => {
+    music.volume = 0.6;
+    music.play();
+    btn.style.display = "none";
+  });
+</script>
 
 <body>
 

@@ -1,3 +1,11 @@
+const music = document.getElementById("bgMusic");
+
+if (music) {
+  document.addEventListener("click", () => {
+    music.play().catch(() => {});
+  }, { once: true });
+}
+
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 

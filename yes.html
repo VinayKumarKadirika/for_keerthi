@@ -4,6 +4,14 @@
   <title>She Said YES ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const music = document.getElementById("bgMusic");
+  if (music && localStorage.getItem("playMusic") === "true") {
+    music.volume = 0.5;
+    music.play().catch(() => {});
+  }
+</script>
+
 <body>
 <audio id="bgMusic" src="song.mp3" loop></audio>
 <section class="section">

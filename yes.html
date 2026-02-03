@@ -1,43 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>She Said YES ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  const music = document.getElementById("bgMusic");
-  if (music && localStorage.getItem("playMusic") === "true") {
-    music.volume = 0.5;
-    music.play().catch(() => {});
-  }
-</script>
 
 <body>
-<audio id="bgMusic" src="song.mp3" loop></audio>
+
 <section class="section">
   <div class="content">
     <h1>She said YES 🥹❤️</h1>
-
     <p>
       I can’t wait to spend forever with you, Keerthi.<br>
-      Every day, every laugh, every dream — together.
+      — Yours always, Vinay 💍
     </p>
-
-    <h2>— Yours always, Vinay 💍</h2>
   </div>
 </section>
 
-<script src="hearts.js"></script>
-</body>
-  <audio id="bgMusic" src="song.mp3" loop></audio>
+<audio id="bgMusic" src="song.mp3" loop></audio>
 
 <script>
   const music = document.getElementById("bgMusic");
 
-  if (music && localStorage.getItem("playMusic") === "true") {
+  if (localStorage.getItem("playMusic") === "true") {
     music.volume = 0.6;
     music.play().catch(() => {});
   }
 </script>
 
+<script src="hearts.js"></script>
+</body>
 </html>

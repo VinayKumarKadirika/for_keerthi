@@ -159,3 +159,33 @@ p {
 }
 
 }
+
+/* ===== STORY PAGE TEXT ===== */
+.story-text {
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.7;
+  margin-bottom: 3vh;
+}
+
+.story-text.highlight {
+  margin-top: 2vh;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+}
+
+/* ===== CODE CARD ===== */
+.code-card {
+  margin-top: 5vh;
+  padding: 4vh 4vw;
+  background: linear-gradient(135deg, #ffdce8, #ffeaf1);
+  border-radius: 30px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  text-align: left;
+  max-width: 700px;
+}
+
+.code-card p {
+  margin: 1vh 0;
+  font-family: "Courier New", monospace;
+}
+

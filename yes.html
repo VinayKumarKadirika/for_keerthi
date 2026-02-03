@@ -29,4 +29,15 @@
 
 <script src="hearts.js"></script>
 </body>
+  <audio id="bgMusic" src="song.mp3" loop></audio>
+
+<script>
+  const music = document.getElementById("bgMusic");
+
+  if (music && localStorage.getItem("playMusic") === "true") {
+    music.volume = 0.6;
+    music.play().catch(() => {});
+  }
+</script>
+
 </html>

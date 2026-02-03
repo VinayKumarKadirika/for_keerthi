@@ -193,4 +193,21 @@ p {
   max-width: 110px !important;
   max-height: 110px !important;
 }
+/* 🎟️ STICKER SIZE: 1 inch x 1 inch */
+.photo-gallery img {
+  width: 1in;
+  height: 1in;
+  max-width: 1in;
+  max-height: 1in;
+
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+
+  transition: transform 0.25s ease;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.15) rotate(-2deg);
+}
 

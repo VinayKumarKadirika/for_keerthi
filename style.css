@@ -185,3 +185,12 @@ p {
     opacity: 0;
   }
 }
+
+/* 🔒 FORCE STICKER SIZE – FINAL OVERRIDE */
+.photo-gallery img {
+  width: 110px !important;
+  height: 110px !important;
+  max-width: 110px !important;
+  max-height: 110px !important;
+}
+

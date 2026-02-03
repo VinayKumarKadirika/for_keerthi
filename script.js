@@ -3,19 +3,22 @@ const music = document.getElementById("bgMusic");
 
 if (yesBtn && music) {
   yesBtn.addEventListener("click", () => {
-    music.volume = 0.5;
+    // mark that music is allowed
+    localStorage.setItem("playMusic", "true");
 
-    music.play().then(() => {
-      // remember that music is allowed
-      localStorage.setItem("playMusic", "true");
+    music.volume = 0.6;
 
-      // small delay so music actually starts
-      setTimeout(() => {
+    // play music ON CLICK (this is the key)
+    music.play()
+      .then(() => {
+        // give browser a moment to start audio
+        setTimeout(() => {
+          window.location.href = "yes.html";
+        }, 400);
+      })
+      .catch(() => {
+        // even if play fails, still go to yes.html
         window.location.href = "yes.html";
-      }, 300);
-    }).catch(() => {
-      // even if play fails, still navigate
-      window.location.href = "yes.html";
-    });
+      });
   });
 }

@@ -135,4 +135,27 @@ p {
     transform: translateY(-120vh);
     opacity: 0;
   }
+
+  /* ===== PHOTO GALLERY ===== */
+.photo-gallery {
+  display: flex;
+  gap: 30px;
+  margin-top: 5vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-gallery img {
+  width: 280px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
 }
